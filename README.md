@@ -1,0 +1,2 @@
+# BlockStateConverter
+マイクラ内のブロックのidやblockstateをNBTとして取得できるデータパック
