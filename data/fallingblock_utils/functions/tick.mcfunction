@@ -1,0 +1,1 @@
+execute as @a if entity @s[scores={Carrot=1..}] at @s run function fallingblock_utils:_block_coordinate
