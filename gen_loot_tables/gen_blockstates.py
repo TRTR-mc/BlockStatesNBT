@@ -5,14 +5,13 @@ import json
 
 PATH = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
 
-## const
 BOOLEAN = [False, True]
 _0_1 = [0, 1]
 DIT_4 = ["east", "north", "south", "west"]
 DIT_6 = ["east", "north", "south", "west", "up", "down"]
 AXIS = ["x", "y", "z"]
 
-## define functions
+
 # blockstates.jsonにする辞書データの項目追加
 def gen_dict(keys: list, values: list, id: list):
     s_dict = dict(zip(keys, values))
