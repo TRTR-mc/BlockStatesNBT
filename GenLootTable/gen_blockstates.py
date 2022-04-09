@@ -1,6 +1,9 @@
+import os
+import pathlib
 import json
-from turtle import bgcolor
 
+
+PATH = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
 
 ## const
 BOOLEAN = [False, True]
@@ -774,4 +777,5 @@ gen_dict(k, v, id)
 
 ## export
 with open('debug/blockstates.json', 'w') as f:
-    json.dump(Out, f, indent=4)
+    #json.dump(Out, f, indent=4)
+    pass
