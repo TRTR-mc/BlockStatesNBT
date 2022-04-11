@@ -49,16 +49,16 @@ for id in block_list:
     state_dic_list = list()
     for com in l_p:
         # Noneを除去したうえで辞書にする
-        dc_ = [temp for temp in com if temp != None]
-        dc = dict(dc_)
+        d_ = [temp for temp in com if temp != None]
+        d = dict(d_)
         
         # set_nbt用の文字列を生成
-        dc_str_l = [str(k) + ":" + "\"" + str(v) + "\"" for k, v in dc.items()]
-        set_nbt_tag = "{" + ",".join(dc_str_l) + "}"
+        d_str_l = [str(k) + ":" + "\"" + str(v) + "\"" for k, v in d.items()]
+        set_nbt_tag = "{" + ",".join(d_str_l) + "}"
 
         # 辞書リストに追加
         value = ast.literal_eval((str(tpl_state)).replace('$', id).replace('=', set_nbt_tag))
-        value["conditions"][0]["predicate"]["block"]["state"] = dc
+        value["conditions"][0]["predicate"]["block"]["state"] = d
         state_dic_list.append(copy.deepcopy(value))
 
 
