@@ -47,31 +47,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:debug_stick",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{_:{id:\"minecraft:anvil\", state:{facing: \"east\"}}}"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:location_check",
-                            "predicate": {
-                                "block": {
-                                    "blocks": [
-                                        "minecraft:anvil"
-                                    ],
-                                    "state": {
-                                        "l": 1
-                                    }
-                                }
-                            }
-                        }
-                    ]
                 }
             ]
         }

@@ -12,14 +12,14 @@ DIT_6 = ["east", "north", "south", "west", "up", "down"]
 AXIS = ["x", "y", "z"]
 
 
-# blockstates.jsonにする辞書データの項目追加
+# Add dictionary data entries to blockstates.json
 def gen_dict(keys: list, values: list, id: set):
     s_dict = dict(zip(keys, values))
     dic = {temp: s_dict for temp in id}
-    Out.update(dic)
+    out.update(dic)
 
-# バニラのブロックタグのjsonファイルを参照してidリストを返す
-def set_id(block_tags: set, except_id: set = set()):      # (ブロックタグ名[set], idリストに入れたくないid[set])
+# Refer to the json file of vanilla block tags and return the id list
+def set_id(block_tags: set, except_id: set = set()):      # (block tag name[set], exclude id[set])
     ids = set()
 
     for f_name in block_tags:
@@ -30,7 +30,7 @@ def set_id(block_tags: set, except_id: set = set()):      # (ブロックタグ�
     return ids.difference(except_id)
 
 ##
-Out = {}
+out = {}
 
 # anvil
 k = ["facing"]
@@ -76,13 +76,13 @@ gen_dict(k, v, id)
 
 # beehive
 k = ["facing", "honey_level"]
-v = [DIT_4, [list(range(6))]]
+v = [DIT_4, list(range(6))]
 id = {"minecraft:beehive"}
 gen_dict(k, v, id)
 
 # beetroots
 k = ["age"]
-v = [[list(range(4))]]
+v = [list(range(4))]
 id = {"minecraft:beetroots"}
 gen_dict(k, v, id)
 
@@ -122,16 +122,16 @@ v = [BOOLEAN, BOOLEAN, BOOLEAN]
 id = {"minecraft:brewing_stand"}
 gen_dict(k, v, id)
 
-# bobble_column
+# bubble_column
 k = ["drag"]
 v = [BOOLEAN]
-id = {"minecraft:bobble_column"}
+id = {"minecraft:bubble_column"}
 gen_dict(k, v, id)
 
 # buttons
 k = ["face", "facing", "powered"]
 v = [["ceiling", "floor", "wall"], DIT_4, BOOLEAN]
-id = set_id({'buttons'})
+id = set_id({'buttons', 'wooden_buttons'}, {'#minecraft:wooden_buttons'})
 gen_dict(k, v, id)
 
 # cactus
@@ -167,7 +167,7 @@ gen_dict(k, v, id)
 # carrots
 k = ["age"]
 v = [list(range(8))]
-id = {"minecraft:carrot"}
+id = {"minecraft:carrots"}
 gen_dict(k, v, id)
 
 # cauldron
@@ -215,7 +215,7 @@ gen_dict(k, v, id)
 # chorus_plant
 k = ["down", "east", "north", "south", "up", "west"]
 v = [BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN]
-id = {"minecraft:chrous_plant"}
+id = {"minecraft:chorus_plant"}
 gen_dict(k, v, id)
 
 # cocoa
@@ -354,7 +354,7 @@ gen_dict(k, v, id)
 # glazed_terracotta
 k = ["facing"]
 v = [DIT_4]
-id = set_id({'terracotta'})
+id = set_id({'terracotta'},{"minecraft:terracotta"})
 id = {temp.replace('terracotta', 'glazed_terracotta') for temp in id}
 gen_dict(k, v, id)
 
@@ -493,13 +493,13 @@ gen_dict(k, v, id)
 # mob_heads
 k = ["rotation"]
 v = [list(range(16))]
-id = {"minecraft:skelton_skull", "minecraft:wither_skelton_skull", "minecraft:zombie_head", "minecraft:player_head", "minecraft:creeper_head", "minecraft:dragon_head"}
+id = {"minecraft:skeleton_skull", "minecraft:wither_skeleton_skull", "minecraft:zombie_head", "minecraft:player_head", "minecraft:creeper_head", "minecraft:dragon_head"}
 gen_dict(k, v, id)
 
 # mob_wall_heads
 k = ["facing"]
 v = [DIT_4]
-id = {"minecraft:skelton_wall_skull", "minecraft:wither_skelton_wall_skull", "minecraft:zombie_wall_head", "minecraft:player_wall_head", "minecraft:creeper_wall_head", "minecraft:dragon_wall_head"}
+id = {"minecraft:skeleton_wall_skull", "minecraft:wither_skeleton_wall_skull", "minecraft:zombie_wall_head", "minecraft:player_wall_head", "minecraft:creeper_wall_head", "minecraft:dragon_wall_head"}
 gen_dict(k, v, id)
 
 # mushroom_blocks
@@ -613,13 +613,13 @@ gen_dict(k, v, id)
 # redstone_comparator
 k = ["facing", "mode", "powered"]
 v = [DIT_4, ["compare", "subtract"], BOOLEAN]
-id = {"minecraft:redstone_comparator"}
+id = {"minecraft:comparator"}
 gen_dict(k, v, id)
 
 # RS_dust
 k = ["east", "north", "power", "south", "west"]
 v = [["none", "side", "up"], ["none", "side", "up"], list(range(16)), ["none", "side", "up"], ["none", "side", "up"]]
-id = {"minecraft:redstone_dust"}
+id = {"minecraft:redstone_wire"}
 gen_dict(k, v, id)
 
 # RS_lamp
@@ -637,7 +637,7 @@ gen_dict(k, v, id)
 # RS_repeater
 k = ["delay", "facing", "locked", "powered"]
 v = [list(range(1, 5)), DIT_4, BOOLEAN, BOOLEAN]
-id = {"minecraft:redstone_repeater"}
+id = {"minecraft:repeater"}
 gen_dict(k, v, id)
 
 # RS_torch
@@ -709,7 +709,7 @@ gen_dict(k, v, id)
 # smoker
 k = ["facing", "lit"]
 v = [DIT_4, BOOLEAN]
-id = {"minecraft:smooker"}
+id = {"minecraft:smoker"}
 gen_dict(k, v, id)
 
 # snow
@@ -721,7 +721,7 @@ gen_dict(k, v, id)
 # stairs
 k = ["facing", "half", "shape", "waterlogged"]
 v = [DIT_4, ["bottom", "top"], ["inner_left", "inner_right", "outer_left", "outer_right", "straight"], BOOLEAN]
-id = set_id({"wooden_stairs", "stairs"}, {"#wooden_stairs"})
+id = set_id({"wooden_stairs", "stairs"}, {"#minecraft:wooden_stairs"})
 gen_dict(k, v, id)
 
 # stonecutter
@@ -739,7 +739,7 @@ gen_dict(k, v, id)
 # suger_cane
 k = ["age"]
 v = [list(range(16))]
-id = {"minecraft:suger_cane"}
+id = {"minecraft:sugar_cane"}
 gen_dict(k, v, id)
 
 # sweet_berry_bush
@@ -748,10 +748,10 @@ v = [list(range(4))]
 id = {"minecraft:sweet_berry_bush"}
 gen_dict(k, v, id)
 
-# tall_glass and large_fern
+# tall_grass and large_fern
 k = ["half"]
 v = [["lower", "upper"]]
-id = {"minecraft:tall_glass", "minecraft:large_fern"}
+id = {"minecraft:tall_grass", "minecraft:large_fern"}
 gen_dict(k, v, id)
 
 # tall_seagrass
@@ -808,10 +808,10 @@ v = [list(range(26))]
 id = {"minecraft:twisting_vines"}
 gen_dict(k, v, id)
 
-# vines
+# vine
 k = ["east", "north", "south", "up", "west"]
 v = [BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN]
-id = {"minecraft:vines"}
+id = {"minecraft:vine"}
 gen_dict(k, v, id)
 
 # walls
@@ -840,4 +840,4 @@ gen_dict(k, v, id)
 
 ## export
 export_path = PATH / 'data' / 'blockstates.json'
-export_path.write_text(json.dumps(Out, indent=4))
+export_path.write_text(json.dumps(out, indent=4))
