@@ -9,7 +9,7 @@ import itertools
 PATH = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
 
 
-# input
+# Load data files
 all_id_path = PATH / 'data' / 'blocktags' / 'all.json'
 all_id = json.loads(all_id_path.read_text())
 
@@ -47,11 +47,11 @@ for id in block_list:
         dic_list = [(key, temp) for temp in val_list]
         l.append(dic_list)
     
-    # Create blockstate sum of products
+    # Create blockstates combination
     l += [[None], [None], [None], [None], [None], [None]]
     l_p = itertools.product(l[0], l[1], l[2], l[3], l[4], l[5])
 
-    # Add per state combination
+    # Add per blockstates combination
     for com in l_p:
         # Remove None and make it a dict
         d_ = [temp for temp in com if temp != None]
@@ -85,11 +85,12 @@ out_state["pools"][0]["entries"] = state_dic_list
 out_all = copy.deepcopy(template)
 out_all["pools"][0]["entries"] = id_dic_list_ + state_dic_list
 
-# export
+
+# Export
 id_ex_path = PATH / 'id.json'
 id_ex_path.write_text(json.dumps(out_id, indent=4))
 
-state_ex_path = PATH / 'state.json'
+state_ex_path = PATH / 'states.json'
 state_ex_path.write_text(json.dumps(out_state, indent=4))
 
 all_ex_path = PATH / 'all.json'
