@@ -25,16 +25,16 @@ tpl_id = template["pools"][0]["entries"][0]
 tpl_state = template["pools"][0]["entries"][1]
 
 
-# Create dict-list for id display
+# Create dict-list for 'id.json'
 id_dic_list = [ast.literal_eval((str(tpl_id)).replace('$', id)) for id in all_id["values"]]
 
 
-# Create dict-list for displaying id of blocks without blockstate
+# Create dict-list for 'all.json'
 all_id_ = set(all_id["values"]) - set(blockstates_dict.keys())
 id_dic_list_ = [ast.literal_eval((str(tpl_id)).replace('$', id)) for id in all_id_]
 
 
-# Create dict-list for blockstates display
+# Create dict-list for 'state.json'
 block_list = list(blockstates_dict.keys())
 
 state_dic_list = list()
@@ -89,7 +89,7 @@ out_all["pools"][0]["entries"] = id_dic_list_ + state_dic_list
 id_ex_path = PATH / 'id.json'
 id_ex_path.write_text(json.dumps(out_id, indent=4))
 
-state_ex_path = PATH / 'states.json'
+state_ex_path = PATH / 'state.json'
 state_ex_path.write_text(json.dumps(out_state, indent=4))
 
 all_ex_path = PATH / 'all.json'
