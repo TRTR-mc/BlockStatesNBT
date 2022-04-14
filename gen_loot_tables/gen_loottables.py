@@ -15,6 +15,7 @@ all_id = json.loads(all_id_path.read_text())
 
 blockstates_path = PATH / 'data' / 'blockstates.json'
 blockstates_dict = json.loads(blockstates_path.read_text())
+del blockstates_dict['version']     # delete version comment
 
 
 # Load template

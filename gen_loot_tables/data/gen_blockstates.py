@@ -23,14 +23,15 @@ def set_id(block_tags: set, except_id: set = set()):      # (block tag name[set]
     ids = set()
 
     for f_name in block_tags:
-        path = PATH / 'data' / 'blocktags' / 'vanilla' / (f_name + '.json')
+        path = PATH / 'blocktags' / 'vanilla' / (f_name + '.json')
         dic = json.loads(path.read_text())
         ids |= set(dic["values"])
         
     return ids.difference(except_id)
 
-##
-out = {}
+
+# version表記
+out = {"version": "1.18.2"}
 
 # anvil
 k = ["facing"]
