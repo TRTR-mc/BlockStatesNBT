@@ -1,2 +1,4 @@
-# blockstates.json生成スクリプト、コードが汚いので隠ぺい
-gen_loot_tables/gen_blockstates.py
+
+*
+!/BlockStateNBT/
+!/gen_loot_tables/
