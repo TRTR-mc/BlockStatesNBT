@@ -10,17 +10,14 @@ PATH = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Load data files
-all_id_path = PATH / 'data' / 'blocktags' / 'all.json'
-all_id = json.loads(all_id_path.read_text())
+all_id = json.loads((PATH / 'data/blocktags/all.json').read_text())
 
-blockstates_path = PATH / 'data' / 'blockstates.json'
-blockstates_dict = json.loads(blockstates_path.read_text())
+blockstates_dict = json.loads((PATH / 'data/blockstates.json').read_text())
 del blockstates_dict['version']     # delete version comment
 
 
 # Load template
-templete_path = PATH / 'data' / 'template.json'
-template = json.loads(templete_path.read_text())
+template = json.loads((PATH / 'data/template.json').read_text())
 
 tpl_id = template["pools"][0]["entries"][0]
 tpl_state = template["pools"][0]["entries"][1]
@@ -32,7 +29,7 @@ id_dic_list = [ast.literal_eval((str(tpl_id)).replace('$', id)) for id in all_id
 
 # Create dict-list for 'all.json'
 all_id_ = set(all_id["values"]) - set(blockstates_dict.keys())
-id_dic_list_ = [ast.literal_eval((str(tpl_id)).replace('$', id)) for id in all_id_]
+id_dic_list_ = [ast.literal_eval((str(tpl_id)).replace('$', id)) for id in sorted(list(all_id_))]
 
 
 # Create dict-list for 'state.json'
@@ -88,17 +85,14 @@ out_all["pools"][0]["entries"] = id_dic_list_ + state_dic_list
 
 
 # Export
-id_ex_path = PATH / 'id.json'
-id_ex_path.write_text(json.dumps(out_id, indent=4))
+(PATH / 'id.json').write_text(json.dumps(out_id, indent=4))
 
-state_ex_path = PATH / 'states.json'
-state_ex_path.write_text(json.dumps(out_state, indent=4))
+(PATH / 'states.json').write_text(json.dumps(out_state, indent=4))
 
-all_ex_path = PATH / 'all.json'
-all_ex_path.write_text(json.dumps(out_all, indent=4))
+(PATH / 'all.json').write_text(json.dumps(out_all, indent=4))
 
 # Update datapack
-dp_loottable_path = PATH.parent / 'BlockStateNBT' / 'data' / 'fallingblock_utils' / 'loot_tables'
+dp_loottable_path = PATH.parent / 'BlockStateNBT/data/fallingblock_utils/loot_tables'
 if dp_loottable_path.exists() == True:
     input = input('Input "o" to override datapack loottables: ')
     if input == 'o':
