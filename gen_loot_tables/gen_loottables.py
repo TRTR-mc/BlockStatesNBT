@@ -96,3 +96,12 @@ state_ex_path.write_text(json.dumps(out_state, indent=4))
 
 all_ex_path = PATH / 'all.json'
 all_ex_path.write_text(json.dumps(out_all, indent=4))
+
+# Update datapack
+dp_loottable_path = PATH.parent / 'BlockStateNBT' / 'data' / 'fallingblock_utils' / 'loot_tables'
+if dp_loottable_path.exists() == True:
+    input = input('Input "o" to override datapack loottables: ')
+    if input == 'o':
+        (dp_loottable_path /'id.json').write_text(json.dumps(out_id, indent=4))
+        (dp_loottable_path /'states.json').write_text(json.dumps(out_state, indent=4))
+        (dp_loottable_path /'all.json').write_text(json.dumps(out_all, indent=4))
