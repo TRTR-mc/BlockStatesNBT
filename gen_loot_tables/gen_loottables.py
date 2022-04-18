@@ -42,11 +42,11 @@ for id in (list(blockstates_dict.keys())):
         dic_list = [(key, temp) for temp in val_list]
         l.append(dic_list)
     
-    # blockstates combination
+    # iterator
     l += [[None], [None], [None], [None], [None], [None]]
     l_p = itertools.product(l[0], l[1], l[2], l[3], l[4], l[5])
 
-    # per blockstates combination
+    # append data to the list
     for com in l_p:
         d_ = [temp for temp in com if temp != None]
         d = dict(d_)
@@ -69,7 +69,7 @@ for id in (list(blockstates_dict.keys())):
         state_dic_list.append(copy.deepcopy(value))
 
 
-# dictionaries for output
+# loot_tables for export
 out_id = copy.deepcopy(TEMPLATE)
 out_id["pools"][0]["entries"] = id_dic_list
 
