@@ -1,2 +1,6 @@
 
-TR_Weapons/
+*
+!/BlockStatesNBT/
+!/gen_loot_tables/
+!/LICENSE
+!/README.md
