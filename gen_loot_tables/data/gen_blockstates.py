@@ -349,7 +349,7 @@ gen_dict(k, v, id)
 # glass_panes
 k = ["east", "north", "south", "waterlogged", "west"]
 v = [BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN]
-id = set_id({'impermeable'})
+id = set_id({'impermeable'}, {'minecraft:tinted_glass'})
 id = [temp.replace('glass', 'glass_pane') for temp in id]
 gen_dict(k, v, id)
 
