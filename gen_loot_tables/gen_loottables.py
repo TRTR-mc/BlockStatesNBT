@@ -73,19 +73,30 @@ for id in (list(blockstates_dict.keys())):
 out_id = copy.deepcopy(TEMPLATE)
 out_id["pools"][0]["entries"] = id_dic_list
 
+out_id_ = ast.literal_eval((str(out_id)).replace('id:\"minecraft:', 'id:\"'))
+
+
 out_state = copy.deepcopy(TEMPLATE)
 out_state["pools"][0]["entries"] = state_dic_list
+
+out_state_ = ast.literal_eval((str(out_state)).replace('id:\"minecraft:', 'id:\"'))
+
 
 out_all = copy.deepcopy(TEMPLATE)
 out_all["pools"][0]["entries"] = id_dic_list_ + state_dic_list
 
+out_all_ = ast.literal_eval((str(out_all)).replace('id:\"minecraft:', 'id:\"'))
+
 
 # export
 (PATH / 'id.json').write_text(json.dumps(out_id, indent=4))
+(PATH / 'id_.json').write_text(json.dumps(out_id_, indent=4))
 
 (PATH / 'state.json').write_text(json.dumps(out_state, indent=4))
+(PATH / 'state_.json').write_text(json.dumps(out_state_, indent=4))
 
 (PATH / 'all.json').write_text(json.dumps(out_all, indent=4))
+(PATH / 'all_.json').write_text(json.dumps(out_all_, indent=4))
 
 
 # update datapack
@@ -96,3 +107,7 @@ if dp_loottable_path.exists() == True:
         (dp_loottable_path /'id.json').write_text(json.dumps(out_id, indent=4))
         (dp_loottable_path /'state.json').write_text(json.dumps(out_state, indent=4))
         (dp_loottable_path /'all.json').write_text(json.dumps(out_all, indent=4))
+
+        (dp_loottable_path /'id_.json').write_text(json.dumps(out_id_, indent=4))
+        (dp_loottable_path /'state_.json').write_text(json.dumps(out_state_, indent=4))
+        (dp_loottable_path /'all_.json').write_text(json.dumps(out_all_, indent=4))
