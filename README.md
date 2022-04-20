@@ -43,8 +43,8 @@ execute positioned 100 100 100 run function foo:get
 
 
 #> foo:get
-loot spawn ~ 500 ~ loot blockstates_nbt:all
-data get entity @e[type=item,y=500,distance=..3,limit=1] Item.tag.data
+loot spawn ~ 500.0 ~ loot blockstates_nbt:all
+data get entity @e[type=item,y=500,distance=..1,limit=1] Item.tag.data
     # {id:"minecraft:acacia_slab",state:{type:"top",waterlogged:false}}
 kill @e[type=item,y=500,distance=..3,limit=1]
 ```
@@ -55,8 +55,8 @@ execute positioned 50 50 50 run function foo:get
 
 
 #> foo:get
-loot spawn ~ 500 ~ loot blockstates_nbt:id_
-data get entity @e[type=item,y=500,distance=..3,limit=1] Item.tag.data
+loot spawn ~ 500.0 ~ loot blockstates_nbt:id_
+data get entity @e[type=item,y=500,distance=..1,limit=1] Item.tag.data
     # {id:"magma_block"}
 kill @e[type=item,y=500,distance=..3,limit=1]
 ```

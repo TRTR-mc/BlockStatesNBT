@@ -22,38 +22,49 @@ TPL_ID = TEMPLATE["pools"][0]["entries"][0]
 TPL_STATE = TEMPLATE["pools"][0]["entries"][1]
 
 
+# replace $,@,=
+def set_id_state(mc_id: str, set_nbt=None):
+    mc_id_ = mc_id.replace('minecraft:', '')
+    if set_nbt is None:
+        out_s = (str(TPL_ID)).replace('$', mc_id).replace('@', mc_id_)
+    else:
+        out_s = (str(TPL_STATE)).replace('$', mc_id).replace('@', mc_id_).replace('=', set_nbt)
+
+    return ast.literal_eval(out_s)
+
+
 # entries for 'id.json'
-id_dic_list = [ast.literal_eval((str(TPL_ID)).replace('$', id)) for id in all_id["values"]]
+id_dic_list = [set_id_state(id) for id in all_id["values"]]
 
 
 # entries for 'all.json'
 all_id_ = set(all_id["values"]) - set(blockstates_dict.keys())
-id_dic_list_ = [ast.literal_eval((str(TPL_ID)).replace('$', id)) for id in sorted(list(all_id_))]
+id_dic_list_ = [set_id_state(id) for id in sorted(list(all_id_))]
 
 
 # entries for 'state.json'
 state_dic_list = []
 for id in (list(blockstates_dict.keys())):
     dic = blockstates_dict[id]
-    
+
     # [[("level":0), ("level":1), ("level":2)], [("waterlogged":False), ("waterlogged":True)]]
-    l = []
+    state_list = []
     for key, val_list in zip(list(dic.keys()), list(dic.values())):
         dic_list = [(key, temp) for temp in val_list]
-        l.append(dic_list)
-    
+        state_list.append(dic_list)
+
     # iterator
-    l += [[None], [None], [None], [None], [None], [None]]
-    l_p = itertools.product(l[0], l[1], l[2], l[3], l[4], l[5])
+    state_list += [["_"], ["_"], ["_"], ["_"], ["_"], ["_"]]
+    state_list_p = itertools.product(state_list[0], state_list[1], state_list[2], state_list[3], state_list[4], state_list[5])
 
     # append data to the list
-    for com in l_p:
-        d_ = [temp for temp in com if temp != None]
-        d = dict(d_)
-        
+    for com in state_list_p:
+        state_ = [temp for temp in com if temp != "_"]
+        state = dict(state_)
+
         # generate string for set_nbt
-        d_str_l = list()
-        for k, v in d.items():
+        d_str_l = list(state)
+        for k, v in state.items():
             if type(v) is str:
                 d_str_l.append(str(k) + ":" + "\"" + str(v) + "\"")
             elif type(v) is int:
@@ -64,8 +75,8 @@ for id in (list(blockstates_dict.keys())):
         set_nbt_tag = "{" + ",".join(d_str_l) + "}"
 
         # append
-        value = ast.literal_eval((str(TPL_STATE)).replace('$', id).replace('=', set_nbt_tag))
-        value["conditions"][0]["predicate"]["block"]["state"] = d
+        value = set_id_state(id, set_nbt_tag)
+        value["conditions"][0]["predicate"]["block"]["state"] = state
         state_dic_list.append(copy.deepcopy(value))
 
 
@@ -73,41 +84,24 @@ for id in (list(blockstates_dict.keys())):
 out_id = copy.deepcopy(TEMPLATE)
 out_id["pools"][0]["entries"] = id_dic_list
 
-out_id_ = ast.literal_eval((str(out_id)).replace('id:\"minecraft:', 'id:\"'))
-
-
 out_state = copy.deepcopy(TEMPLATE)
 out_state["pools"][0]["entries"] = state_dic_list
-
-out_state_ = ast.literal_eval((str(out_state)).replace('id:\"minecraft:', 'id:\"'))
-
 
 out_all = copy.deepcopy(TEMPLATE)
 out_all["pools"][0]["entries"] = id_dic_list_ + state_dic_list
 
-out_all_ = ast.literal_eval((str(out_all)).replace('id:\"minecraft:', 'id:\"'))
-
 
 # export
 (PATH / 'id.json').write_text(json.dumps(out_id, indent=4))
-(PATH / 'id_.json').write_text(json.dumps(out_id_, indent=4))
-
 (PATH / 'state.json').write_text(json.dumps(out_state, indent=4))
-(PATH / 'state_.json').write_text(json.dumps(out_state_, indent=4))
-
 (PATH / 'all.json').write_text(json.dumps(out_all, indent=4))
-(PATH / 'all_.json').write_text(json.dumps(out_all_, indent=4))
 
 
 # update datapack
 dp_loottable_path = PATH.parent / 'BlockStatesNBT/data/blockstates_nbt/loot_tables'
-if dp_loottable_path.exists() == True:
-    input = input('Input "o" to override datapack loottables: ')
-    if input == 'o':
-        (dp_loottable_path /'id.json').write_text(json.dumps(out_id, indent=4))
-        (dp_loottable_path /'state.json').write_text(json.dumps(out_state, indent=4))
-        (dp_loottable_path /'all.json').write_text(json.dumps(out_all, indent=4))
-
-        (dp_loottable_path /'id_.json').write_text(json.dumps(out_id_, indent=4))
-        (dp_loottable_path /'state_.json').write_text(json.dumps(out_state_, indent=4))
-        (dp_loottable_path /'all_.json').write_text(json.dumps(out_all_, indent=4))
+if dp_loottable_path.exists() is True:
+    input = input('Would update:\n BlockStatesNBT/data/blockstates_nbt/loot_tables/**\nProceed (Y/n)? ')
+    if input == 'Y':
+        (dp_loottable_path / 'id.json').write_text(json.dumps(out_id, indent=4))
+        (dp_loottable_path / 'state.json').write_text(json.dumps(out_state, indent=4))
+        (dp_loottable_path / 'all.json').write_text(json.dumps(out_all, indent=4))
