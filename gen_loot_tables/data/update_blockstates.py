@@ -19,7 +19,7 @@ def update_dict(keys: list, values: list, id: set):
     return
 
 
-# refer to the block tags and return the id list
+# return the id list
 def set_id(block_tags: set, except_id: set = set()):      # (block tag name[set], exclude id[set])
     ids = set()
 
