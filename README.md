@@ -6,12 +6,14 @@
 - gen_loot_tablesディレクトリ
   - loottable生成用のスクリプトおよびjsonファイル
 ## 概要
-マイクラのブロックのid(`minecraft:stone etc..`)やblockstates(`powered=false etc..`)をNBTとして取得できる。  
-ストレージを介してアイテム説明文やtellraw等に組み込んだり、アイテムのidとNBT比較を行いたいとき等に有用
+loottableを利用して、マイクラのブロックのid(`minecraft:stone etc..`)や  
+ブロックステイト(`powered=false etc..`)をNBTとして取得できます。
 ## 対応バージョン
-JavaEdition ver1.18.2
+Minecraft ver1.18.2
+## DL方法
+右のReleasesからダウンロードしてください。
 ## 使用方法
-1. 取得したいブロックの場所でこのデータパックの名前空間`blockstates_nbt`内にあるloottableを呼び出す。
+1. 取得したいブロックの場所でloottableを呼び出す。
 2. 抽選されたアイテムのタグ`data`以下にNBTがあるので、取り出して使用する。  
 
 アイテムタグのNBTのデータ構造は以下の通り
@@ -24,14 +26,14 @@ JavaEdition ver1.18.2
 |      |      |(name)    |string<br>int<br>boolean||
 
 ### loottable一覧
-6つのloottableがあり、それぞれアイテムのタグから取得できる項目が異なる。
+6つのloottableがあり、それぞれアイテムのタグから取得できる項目が異なります。
 - `all.json` idとstate両方
 - `id.json` idのみ
 - `state.json` stateを持つブロックのidとstate
 
-`all.json`よりも、`id.json`や`state.json`のほうがアイテムのエントリー数が少ない。気になる場合は使い分けるとよい。
+`all.json`よりも、`id.json`や`state.json`のほうがアイテムのエントリー数が少ないです。
 
-**例**
+**使用例**
 ```mcfunction
 #> foo:bar
 # 取得したいブロックの場所で実行する
@@ -47,14 +49,19 @@ data get entity @e[type=item,y=500,distance=..1,limit=1] Item.tag.data
 kill @e[type=item,y=500,distance=..1,limit=1]
 ```
 ```mcfunction
-#> foo:bar
+#> foo:bar_
 # (50,50,50)のブロックの"minecraft:"を省略したIDを取得
 execute positioned 50 50 50 run function foo:get
 
 
-#> foo:get
+#> foo:get_
 loot spawn ~ 500.0 ~ loot blockstates_nbt:id
 data get entity @e[type=item,y=500,distance=..1,limit=1] Item.tag.data.id_
     # "magma_block"
 kill @e[type=item,y=500,distance=..1,limit=1]
 ```
+
+また、データパックの中にも例があります。詳しくはfunctionファイル内のコメントを参照してください。
+## 連絡先
+バグ報告や質問などはtwitterのDMにお願いします。  
+https://twitter.com/TRTR_mc
