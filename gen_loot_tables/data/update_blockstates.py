@@ -18,6 +18,7 @@ def update_dict(keys: list, values: list, id: set):
 
     return
 
+
 # refer to the block tags and return the id list
 def set_id(block_tags: set, except_id: set = set()):      # (block tag name[set], exclude id[set])
     ids = set()
@@ -34,7 +35,7 @@ def set_id(block_tags: set, except_id: set = set()):      # (block tag name[set]
 blockstates = json.loads((DIR_PATH / 'blockstates.json').read_text())
 
 # version
-blockstates.update(version = '1.18.2')
+blockstates.update(version='1.18.2')
 
 # update
 #   keys:list = ["facing", "waterlogged"]
@@ -44,6 +45,6 @@ blockstates.update(version = '1.18.2')
 
 # export
 print(blockstates)
-input = input('Input "o" to override blockstates.json: ')
-if input == 'o':
+input = input('Would overwrite:\n gen_loot_tables/data/blockstates.json\nProceed (Y/n)? ')
+if input == 'Y':
     (DIR_PATH / 'blockstates.json').write_text(json.dumps(blockstates, indent=4))

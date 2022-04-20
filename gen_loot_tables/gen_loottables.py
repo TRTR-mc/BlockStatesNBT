@@ -100,7 +100,7 @@ out_all["pools"][0]["entries"] = id_dic_list_ + state_dic_list
 # update datapack
 dp_loottable_path = PATH.parent / 'BlockStatesNBT/data/blockstates_nbt/loot_tables'
 if dp_loottable_path.exists() is True:
-    input = input('Would update:\n BlockStatesNBT/data/blockstates_nbt/loot_tables/**\nProceed (Y/n)? ')
+    input = input('Would overwrite:\n BlockStatesNBT/data/blockstates_nbt/loot_tables/**\nProceed (Y/n)? ')
     if input == 'Y':
         (dp_loottable_path / 'id.json').write_text(json.dumps(out_id, indent=4))
         (dp_loottable_path / 'state.json').write_text(json.dumps(out_state, indent=4))
