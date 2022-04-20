@@ -28,6 +28,7 @@ def set_id_state(mc_id: str, set_nbt=None):
     if set_nbt is None:
         out_s = (str(TPL_ID)).replace('$', mc_id).replace('@', mc_id_)
     else:
+        print(set_nbt)
         out_s = (str(TPL_STATE)).replace('$', mc_id).replace('@', mc_id_).replace('=', set_nbt)
 
     return ast.literal_eval(out_s)
@@ -63,7 +64,7 @@ for id in (list(blockstates_dict.keys())):
         state = dict(state_)
 
         # generate string for set_nbt
-        d_str_l = list(state)
+        d_str_l = []
         for k, v in state.items():
             if type(v) is str:
                 d_str_l.append(str(k) + ":" + "\"" + str(v) + "\"")
