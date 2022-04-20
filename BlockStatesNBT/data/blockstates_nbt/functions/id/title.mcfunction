@@ -10,6 +10,6 @@ data modify storage blockstates_nbt: ID set from entity @e[type=item,distance=..
 kill @e[type=item,distance=..1,y=500,limit=1]
 
 # title
-title @s times 0 10 0
+title @s times 0 20 0
 title @s title ""
 title @s subtitle {"nbt": "ID","storage": "blockstates_nbt:","color": "gold"}
