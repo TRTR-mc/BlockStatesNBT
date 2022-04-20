@@ -23,7 +23,7 @@ TPL_STATE = TEMPLATE["pools"][0]["entries"][1]
 
 
 # replace $,@,=
-def set_id_state(mc_id: str, set_nbt=None):
+def gen_dict(mc_id: str, set_nbt=None):
     mc_id_ = mc_id.replace('minecraft:', '')
     if set_nbt is None:
         out_s = (str(TPL_ID)).replace('$', mc_id).replace('@', mc_id_)
@@ -35,12 +35,12 @@ def set_id_state(mc_id: str, set_nbt=None):
 
 
 # entries for 'id.json'
-id_dic_list = [set_id_state(id) for id in all_id["values"]]
+id_dic_list = [gen_dict(id) for id in all_id["values"]]
 
 
 # entries for 'all.json'
 all_id_ = set(all_id["values"]) - set(blockstates_dict.keys())
-id_dic_list_ = [set_id_state(id) for id in sorted(list(all_id_))]
+id_dic_list_ = [gen_dict(id) for id in sorted(list(all_id_))]
 
 
 # entries for 'state.json'
@@ -76,7 +76,7 @@ for id in (list(blockstates_dict.keys())):
         set_nbt_tag = "{" + ",".join(d_str_l) + "}"
 
         # append
-        value = set_id_state(id, set_nbt_tag)
+        value = gen_dict(id, set_nbt_tag)
         value["conditions"][0]["predicate"]["block"]["state"] = state
         state_dic_list.append(copy.deepcopy(value))
 
