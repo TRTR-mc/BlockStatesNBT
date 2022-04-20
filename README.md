@@ -19,17 +19,15 @@ JavaEdition ver1.18.2
 | ---- | ---- | ----     | ----                   | ---- |
 |data  |      |          |compound                |      |
 |      |id    |          |string                  |ブロックのid|
+|      |id_   |          |string                  |名前空間(`minecraft:`)を省略したブロックのid|
 |      |state |          |compound                |ブロックステイト|
-|      |      |(key_name)|string<br>int<br>boolean||
+|      |      |(name)    |string<br>int<br>boolean||
 
 ### loottable一覧
 6つのloottableがあり、それぞれアイテムのタグから取得できる項目が異なる。
 - `all.json` idとstate両方
 - `id.json` idのみ
 - `state.json` stateを持つブロックのidとstate
-- `all_.json` idとstate両方、ただしidからデフォルトの名前空間(`minecraft:`)が省略されている
-- `id_.json` idのみ、ただしidからデフォルトの名前空間(`minecraft:`)が省略されている
-- `state_.json` stateを持つブロックのidとstate、ただしidからデフォルトの名前空間(`minecraft:`)が省略されている
 
 `all.json`よりも、`id.json`や`state.json`のほうがアイテムのエントリー数が少ない。気になる場合は使い分けるとよい。
 
@@ -45,8 +43,8 @@ execute positioned 100 100 100 run function foo:get
 #> foo:get
 loot spawn ~ 500.0 ~ loot blockstates_nbt:all
 data get entity @e[type=item,y=500,distance=..1,limit=1] Item.tag.data
-    # {id:"minecraft:acacia_slab",state:{type:"top",waterlogged:false}}
-kill @e[type=item,y=500,distance=..3,limit=1]
+    # {id:"minecraft:acacia_slab",id_:"acacia_slab",state:{type:"top",waterlogged:false}}
+kill @e[type=item,y=500,distance=..1,limit=1]
 ```
 ```mcfunction
 #> foo:bar
@@ -55,8 +53,8 @@ execute positioned 50 50 50 run function foo:get
 
 
 #> foo:get
-loot spawn ~ 500.0 ~ loot blockstates_nbt:id_
-data get entity @e[type=item,y=500,distance=..1,limit=1] Item.tag.data
-    # {id:"magma_block"}
-kill @e[type=item,y=500,distance=..3,limit=1]
+loot spawn ~ 500.0 ~ loot blockstates_nbt:id
+data get entity @e[type=item,y=500,distance=..1,limit=1] Item.tag.data.id_
+    # "magma_block"
+kill @e[type=item,y=500,distance=..1,limit=1]
 ```
