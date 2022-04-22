@@ -18,18 +18,18 @@ del blockstates_dict['version']     # delete version comment
 
 # template
 TEMPLATE = json.loads((PATH / 'data/template.json').read_text())
-TPL_ID = TEMPLATE["pools"][0]["entries"][0]
-TPL_STATE = TEMPLATE["pools"][0]["entries"][1]
+ID_TPL = TEMPLATE["pools"][0]["entries"][0]
+STATE_TPL = TEMPLATE["pools"][0]["entries"][1]
 
 
 # replace $,@,=
 def gen_dict(mc_id: str, set_nbt=None):
     mc_id_ = mc_id.replace('minecraft:', '')
     if set_nbt is None:
-        out_s = (str(TPL_ID)).replace('$', mc_id).replace('@', mc_id_)
+        out_s = (str(ID_TPL)).replace('$', mc_id).replace('@', mc_id_)
     else:
         print(set_nbt)
-        out_s = (str(TPL_STATE)).replace('$', mc_id).replace('@', mc_id_).replace('=', set_nbt)
+        out_s = (str(STATE_TPL)).replace('$', mc_id).replace('@', mc_id_).replace('=', set_nbt)
 
     return ast.literal_eval(out_s)
 
