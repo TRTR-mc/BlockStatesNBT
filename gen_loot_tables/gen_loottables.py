@@ -28,7 +28,6 @@ def gen_dict(mc_id: str, set_nbt=None):
     if set_nbt is None:
         out_s = (str(ID_TPL)).replace('$', mc_id).replace('@', mc_id_)
     else:
-        print(set_nbt)
         out_s = (str(STATE_TPL)).replace('$', mc_id).replace('@', mc_id_).replace('=', set_nbt)
 
     return ast.literal_eval(out_s)
