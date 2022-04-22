@@ -1,10 +1,5 @@
 # BlockStatesNBT
-マイクラ内のブロックのidやblockstateをNBTとして取得できるloottable  
-## リポジトリ内容
-- BlockStatesNBTディレクトリ 
-  - loottableを含むデータパック本体
-- gen_loot_tablesディレクトリ
-  - loottable生成用のスクリプトおよびjsonファイル
+マイクラ内のブロックのidやblockstateをNBTとして取得できるloottable
 ## 概要
 loottableを利用して、マイクラのブロックのid(`minecraft:stone etc..`)や  
 ブロックステイト(`powered=false etc..`)をNBTとして取得できます。
