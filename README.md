@@ -11,7 +11,7 @@ loottableを利用して、マイクラのブロックのid(`minecraft:stone etc
 ## 対応バージョン
 Minecraft ver1.18.2
 ## DL方法
-右のReleasesからダウンロードしてください。
+[右のReleases](https://github.com/TRTR-mc/BlockStatesNBT/releases)からダウンロードしてください。
 ## 使用方法
 1. 取得したいブロックの場所でloottableを呼び出す。
 2. 抽選されたアイテムのタグ`data`以下にNBTがあるので、取り出して使用する。  
@@ -26,7 +26,7 @@ Minecraft ver1.18.2
 |      |      |(name)    |string<br>int<br>boolean||
 
 ### loottable一覧
-6つのloottableがあり、それぞれアイテムのタグから取得できる項目が異なります。
+3つのloottableがあり、それぞれアイテムのタグから取得できる項目が異なります。
 - `all.json` idとstate両方
 - `id.json` idのみ
 - `state.json` stateを持つブロックのidとstate
@@ -62,6 +62,3 @@ kill @e[type=item,y=500,distance=..1,limit=1]
 ```
 
 また、データパックの中にも例があります。詳しくはfunctionファイル内のコメントを参照してください。
-## 連絡先
-バグ報告や質問などはtwitterのDMにお願いします。  
-https://twitter.com/TRTR_mc
