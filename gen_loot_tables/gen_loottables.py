@@ -1,12 +1,12 @@
 import os
-import pathlib
+from pathlib import Path
 import json
-import ast
-import copy
-import itertools
+from ast import literal_eval
+from copy import deepcopy
+from itertools import product
 
 
-PATH = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
+PATH = Path(os.path.dirname(os.path.abspath(__file__)))
 
 
 # load files
@@ -30,7 +30,7 @@ def gen_dict(mc_id: str, set_nbt=None):
     else:
         out_s = (str(STATE_TPL)).replace('$', mc_id).replace('@', mc_id_).replace('=', set_nbt)
 
-    return ast.literal_eval(out_s)
+    return literal_eval(out_s)
 
 
 # entries for 'id.json'
@@ -55,7 +55,7 @@ for id in (list(blockstates_dict.keys())):
 
     # iterator
     state_list += [["_"], ["_"], ["_"], ["_"], ["_"], ["_"]]
-    state_list_p = itertools.product(state_list[0], state_list[1], state_list[2], state_list[3], state_list[4], state_list[5])
+    state_list_p = product(state_list[0], state_list[1], state_list[2], state_list[3], state_list[4], state_list[5])
 
     # append data to the list
     for com in state_list_p:
@@ -77,17 +77,17 @@ for id in (list(blockstates_dict.keys())):
         # append
         value = gen_dict(id, set_nbt_tag)
         value["conditions"][0]["predicate"]["block"]["state"] = state
-        state_dic_list.append(copy.deepcopy(value))
+        state_dic_list.append(deepcopy(value))
 
 
 # loot_tables for export
-out_id = copy.deepcopy(TEMPLATE)
+out_id = deepcopy(TEMPLATE)
 out_id["pools"][0]["entries"] = id_dic_list
 
-out_state = copy.deepcopy(TEMPLATE)
+out_state = deepcopy(TEMPLATE)
 out_state["pools"][0]["entries"] = state_dic_list
 
-out_all = copy.deepcopy(TEMPLATE)
+out_all = deepcopy(TEMPLATE)
 out_all["pools"][0]["entries"] = id_dic_list_ + state_dic_list
 
 

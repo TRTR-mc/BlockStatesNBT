@@ -1,9 +1,9 @@
 import os
-import pathlib
+from pathlib import Path
 import json
 
 
-DIR_PATH = pathlib.Path(os.path.dirname(os.path.abspath(__file__)))
+DIR_PATH = Path(os.path.dirname(os.path.abspath(__file__)))
 
 BOOLEAN = [False, True]
 DIT_4 = ["east", "north", "south", "west"]
