@@ -8,6 +8,7 @@ DIR_PATH = Path(os.path.dirname(os.path.abspath(__file__)))
 BOOLEAN = [False, True]
 DIT_4 = ["east", "north", "south", "west"]
 DIT_6 = ["east", "north", "south", "west", "up", "down"]
+WALL = ["low", "none", "tall"]
 
 
 # update
@@ -37,11 +38,17 @@ blockstates = json.loads((DIR_PATH / 'blockstates.json').read_text())
 # version
 blockstates.update(version='1.18.2')
 
-# update
-#   keys:list = ["facing", "waterlogged"]
-#   values:list = [DIT_4, [False, True]]
-#   id:set = {"minecraft:foo"}
-#   update_dict(keys, values, id)
+# leaves
+keys = ['distance', 'persistent', 'waterlogged']
+values = [list(range(1, 8)), BOOLEAN, BOOLEAN]
+id = set_id({'leaves'})
+update_dict(keys, values, id)
+
+# wall
+keys = ["east", "north", "south", "west", "up", "waterlogged"]
+values = [WALL, WALL, WALL, WALL, BOOLEAN, BOOLEAN]
+id = set_id({'walls'})
+update_dict(keys, values, id)
 
 # export
 print(blockstates)
