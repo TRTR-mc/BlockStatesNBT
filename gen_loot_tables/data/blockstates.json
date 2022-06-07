@@ -1,5 +1,5 @@
 {
-    "version": "1.18.2",
+    "version": "1.19",
     "minecraft:anvil": {
         "facing": [
             "east",
@@ -8225,6 +8225,570 @@
             5,
             6,
             7
+        ]
+    },
+    "minecraft:pearlescent_froglight": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:verdant_froglight": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:ochre_froglight": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:minecraft:dark_oak_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:minecraft:acacia_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:minecraft:mangrove_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:minecraft:spruce_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:minecraft:azalea_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:minecraft:flowering_azalea_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:minecraft:jungle_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:minecraft:oak_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:minecraft:birch_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:minecraft:mangrove_wood": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:minecraft:stripped_mangrove_wood": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:minecraft:stripped_mangrove_log": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:minecraft:mangrove_log": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:mangrove_slab": {
+        "type": [
+            "bottom",
+            "top",
+            "double"
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_stairs": {
+        "facing": [
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "half": [
+            "bottom",
+            "top"
+        ],
+        "shape": [
+            "inner_left",
+            "inner_right",
+            "outer_left",
+            "outer_right",
+            "straight"
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_fence": {
+        "east": [
+            false,
+            true
+        ],
+        "north": [
+            false,
+            true
+        ],
+        "south": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ],
+        "west": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_fence_gate": {
+        "facing": [
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "in_wall": [
+            false,
+            true
+        ],
+        "open": [
+            false,
+            true
+        ],
+        "powered": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_pressure_plate": {
+        "powered": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_sign": {
+        "rotation": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ],
+        "lit": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_wall_sign": {
+        "rotation": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+        ],
+        "lit": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_button": {
+        "face": [
+            "ceiling",
+            "floor",
+            "wall"
+        ],
+        "facing": [
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "powered": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_door": {
+        "facing": [
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "half": [
+            "lower",
+            "upper"
+        ],
+        "hinge": [
+            "left",
+            "right"
+        ],
+        "open": [
+            false,
+            true
+        ],
+        "powered": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_trapdoor": {
+        "facing": [
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "half": [
+            "bottom",
+            "top"
+        ],
+        "open": [
+            false,
+            true
+        ],
+        "powered": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_progagule": {
+        "age": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "hanging": [
+            false,
+            true
+        ],
+        "stage": [
+            0,
+            1
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_roots": {
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mud_brick_slab": {
+        "type": [
+            "bottom",
+            "top",
+            "double"
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mud_brick_stairs": {
+        "facing": [
+            "east",
+            "north",
+            "south",
+            "west"
+        ],
+        "half": [
+            "bottom",
+            "top"
+        ],
+        "shape": [
+            "inner_left",
+            "inner_right",
+            "outer_left",
+            "outer_right",
+            "straight"
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mud_brick_wall": {
+        "east": [
+            false,
+            true
+        ],
+        "north": [
+            false,
+            true
+        ],
+        "south": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ],
+        "west": [
+            false,
+            true
+        ],
+        "up": [
+            false,
+            true
+        ]
+    },
+    "minecraft:muddy_mangrove_roots": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:sculk_catalyst": {
+        "bloom": [
+            false,
+            true
+        ]
+    },
+    "minecraft:sculk_shrieker": {
+        "can_summon": [
+            false,
+            true
+        ],
+        "shrieking": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:sculk_vein": {
+        "east": [
+            false,
+            true
+        ],
+        "north": [
+            false,
+            true
+        ],
+        "south": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ],
+        "west": [
+            false,
+            true
+        ],
+        "up": [
+            false,
+            true
+        ],
+        "down": [
+            false,
+            true
         ]
     }
 }

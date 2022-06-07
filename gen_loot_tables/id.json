@@ -7115,6 +7115,28 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:frogspawn\", id_:\"frogspawn\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:frogspawn"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
                             "tag": "{data:{id:\"minecraft:frosted_ice\", id_:\"frosted_ice\"}}"
                         }
                     ],
@@ -10701,6 +10723,358 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_button\", id_:\"mangrove_button\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_button"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_door\", id_:\"mangrove_door\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_door"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_fence\", id_:\"mangrove_fence\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_fence"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_fence_gate\", id_:\"mangrove_fence_gate\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_fence_gate"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_leaves\", id_:\"mangrove_leaves\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_leaves"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_log\", id_:\"mangrove_log\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_log"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_planks\", id_:\"mangrove_planks\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_planks"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_pressure_plate\", id_:\"mangrove_pressure_plate\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_pressure_plate"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_propagule\", id_:\"mangrove_propagule\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_propagule"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_roots\", id_:\"mangrove_roots\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_roots"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_sign\", id_:\"mangrove_sign\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_sign"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_slab\", id_:\"mangrove_slab\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_slab"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_stairs\", id_:\"mangrove_stairs\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_stairs"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_trapdoor\", id_:\"mangrove_trapdoor\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_trapdoor"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_wall_sign\", id_:\"mangrove_wall_sign\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_wall_sign"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mangrove_wood\", id_:\"mangrove_wood\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mangrove_wood"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
                             "tag": "{data:{id:\"minecraft:medium_amethyst_bud\", id_:\"medium_amethyst_bud\"}}"
                         }
                     ],
@@ -10997,6 +11371,138 @@
                                 "block": {
                                     "blocks": [
                                         "minecraft:moving_piston"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mud\", id_:\"mud\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mud"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mud_brick_slab\", id_:\"mud_brick_slab\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mud_brick_slab"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mud_brick_stairs\", id_:\"mud_brick_stairs\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mud_brick_stairs"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mud_brick_wall\", id_:\"mud_brick_wall\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mud_brick_wall"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:mud_bricks\", id_:\"mud_bricks\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:mud_bricks"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:muddy_mangrove_roots\", id_:\"muddy_mangrove_roots\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:muddy_mangrove_roots"
                                     ]
                                 }
                             }
@@ -11735,6 +12241,28 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:ochre_froglight\", id_:\"ochre_froglight\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:ochre_froglight"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
                             "tag": "{data:{id:\"minecraft:orange_banner\", id_:\"orange_banner\"}}"
                         }
                     ],
@@ -12185,6 +12713,50 @@
                                 "block": {
                                     "blocks": [
                                         "minecraft:packed_ice"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:packed_mud\", id_:\"packed_mud\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:packed_mud"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:pearlescent_froglight\", id_:\"pearlescent_froglight\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:pearlescent_froglight"
                                     ]
                                 }
                             }
@@ -13681,6 +14253,28 @@
                                 "block": {
                                     "blocks": [
                                         "minecraft:potted_lily_of_the_valley"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:potted_mangrove_propagule\", id_:\"potted_mangrove_propagule\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:potted_mangrove_propagule"
                                     ]
                                 }
                             }
@@ -15519,6 +16113,28 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:reinforced_deepslate\", id_:\"reinforced_deepslate\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:reinforced_deepslate"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
                             "tag": "{data:{id:\"minecraft:repeater\", id_:\"repeater\"}}"
                         }
                     ],
@@ -15761,6 +16377,50 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:sculk\", id_:\"sculk\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:sculk"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:sculk_catalyst\", id_:\"sculk_catalyst\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:sculk_catalyst"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
                             "tag": "{data:{id:\"minecraft:sculk_sensor\", id_:\"sculk_sensor\"}}"
                         }
                     ],
@@ -15771,6 +16431,50 @@
                                 "block": {
                                     "blocks": [
                                         "minecraft:sculk_sensor"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:sculk_shrieker\", id_:\"sculk_shrieker\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:sculk_shrieker"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:sculk_vein\", id_:\"sculk_vein\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:sculk_vein"
                                     ]
                                 }
                             }
@@ -17367,6 +18071,50 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:stripped_mangrove_log\", id_:\"stripped_mangrove_log\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:stripped_mangrove_log"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:stripped_mangrove_wood\", id_:\"stripped_mangrove_wood\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:stripped_mangrove_wood"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
                             "tag": "{data:{id:\"minecraft:stripped_oak_log\", id_:\"stripped_oak_log\"}}"
                         }
                     ],
@@ -17993,6 +18741,28 @@
                                 "block": {
                                     "blocks": [
                                         "minecraft:twisting_vines_plant"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{data:{id:\"minecraft:verdant_froglight\", id_:\"verdant_froglight\"}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:location_check",
+                            "predicate": {
+                                "block": {
+                                    "blocks": [
+                                        "minecraft:verdant_froglight"
                                     ]
                                 }
                             }

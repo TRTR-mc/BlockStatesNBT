@@ -13,7 +13,7 @@ XYZ = ["x", "y", "z"]
 
 # update
 def update_dict(keys: list, values: list, id: set):
-    id_ = 'minecraft:' + id
+    id_ = ['minecraft:' + _ for _ in id]
     s_dict = dict(zip(keys, values))
     dic = {k: s_dict for k in id_}
     blockstates.update(dic)
@@ -55,7 +55,7 @@ update_dict(keys, values, id)
 # mangrove_logs
 keys = ["axis"]
 values = [XYZ]
-id = set_id('mangrove_logs')
+id = set_id({'mangrove_logs'})
 update_dict(keys, values, id)
 
 # mangrove_slab
@@ -166,28 +166,7 @@ values = [BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN]
 id = {"sculk_vein"}
 update_dict(keys, values, id)
 
-keys = []
-values = []
-id = {}
-update_dict(keys, values, id)
-
-keys = []
-values = []
-id = {}
-update_dict(keys, values, id)
-
-keys = []
-values = []
-id = {}
-update_dict(keys, values, id)
-
-keys = []
-values = []
-id = {}
-update_dict(keys, values, id)
-
 # export
-print(blockstates)
 input = input('Would overwrite:\n gen_loot_tables/data/blockstates.json\nProceed (Y/n)? ')
 if input == 'Y':
     (DIR_PATH / 'blockstates.json').write_text(json.dumps(blockstates, indent=4))
