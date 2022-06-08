@@ -4,9 +4,9 @@
 loottableを利用して、マイクラのブロックのid(`minecraft:stone etc..`)や  
 ブロックステイト(`powered=false etc..`)をNBTとして取得できます。
 ## 対応バージョン
-Minecraft ver1.18.x
+Minecraft ver1.19, 1.18.x
 ## DL方法
-[右のReleases](https://github.com/TRTR-mc/BlockStatesNBT/releases)からダウンロードしてください。
+[右のReleases](https://github.com/TRTR-mc/BlockStatesNBT/releases)からMinecraftのバージョンにあうものをダウンロードしてください。
 ## 使用方法
 1. 取得したいブロックの場所でloottableを呼び出す。
 2. 抽選されたアイテムのタグ`data`以下にNBTがあるので、取り出して使用する。  
