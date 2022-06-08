@@ -39,6 +39,7 @@ blockstates = json.loads((DIR_PATH / 'blockstates.json').read_text())
 # version
 blockstates.update(version='1.19')
 
+
 # 1.19 update
 # froglight
 keys = ["axis"]
@@ -164,6 +165,7 @@ update_dict(keys, values, id)
 keys = ["east", "north", "south", "waterlogged", "west", "up", "down"]
 values = [BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN, BOOLEAN]
 id = {"sculk_vein"}
+
 update_dict(keys, values, id)
 
 # export
