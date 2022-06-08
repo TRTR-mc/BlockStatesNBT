@@ -7621,546 +7621,630 @@
     },
     "minecraft:nether_brick_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:deepslate_brick_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:cobblestone_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:andesite_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:cobbled_deepslate_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:red_sandstone_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:diorite_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:polished_blackstone_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:mossy_cobblestone_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:mossy_stone_brick_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:polished_deepslate_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:red_nether_brick_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:stone_brick_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:polished_blackstone_brick_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:granite_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:deepslate_tile_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:end_stone_brick_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:brick_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:prismarine_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:blackstone_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
     },
     "minecraft:sandstone_wall": {
         "east": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "north": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
         ],
         "south": [
-            false,
-            true
+            "low",
+            "none",
+            "tall"
+        ],
+        "west": [
+            "low",
+            "none",
+            "tall"
         ],
         "up": [
             false,
             true
         ],
         "waterlogged": [
-            false,
-            true
-        ],
-        "west": [
             false,
             true
         ]
