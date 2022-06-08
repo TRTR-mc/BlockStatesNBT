@@ -13,9 +13,9 @@ XYZ = ["x", "y", "z"]
 
 # update
 def update_dict(keys: list, values: list, id: set):
-    id_ = ['minecraft:' + _ for _ in id]
+    id_l = [_ if _.startswith('minecraft:') else 'minecraft:' + _ for _ in id] 
     s_dict = dict(zip(keys, values))
-    dic = {k: s_dict for k in id_}
+    dic = {k: s_dict for k in id_l}
     blockstates.update(dic)
 
     return
@@ -112,10 +112,10 @@ values = [DIT_4, ["bottom", "top"], BOOLEAN, BOOLEAN, BOOLEAN]
 id = {"mangrove_trapdoor"}
 update_dict(keys, values, id)
 
-# mangrove_progagule
+# mangrove_propagule
 keys = ["age", "hanging", "stage", "waterlogged"]
 values = [list(range(4)), BOOLEAN, [0, 1], BOOLEAN]
-id = {"mangrove_progagule"}
+id = {"mangrove_propagule"}
 update_dict(keys, values, id)
 
 # mangrove_roots

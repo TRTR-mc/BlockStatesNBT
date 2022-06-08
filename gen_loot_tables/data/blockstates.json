@@ -3664,7 +3664,7 @@
             6,
             7
         ],
-        "persistant": [
+        "persistent": [
             false,
             true
         ],
@@ -3683,7 +3683,7 @@
             6,
             7
         ],
-        "persistant": [
+        "persistent": [
             false,
             true
         ],
@@ -3702,7 +3702,7 @@
             6,
             7
         ],
-        "persistant": [
+        "persistent": [
             false,
             true
         ],
@@ -3721,7 +3721,7 @@
             6,
             7
         ],
-        "persistant": [
+        "persistent": [
             false,
             true
         ],
@@ -3740,7 +3740,7 @@
             6,
             7
         ],
-        "persistant": [
+        "persistent": [
             false,
             true
         ],
@@ -3759,7 +3759,7 @@
             6,
             7
         ],
-        "persistant": [
+        "persistent": [
             false,
             true
         ],
@@ -3778,7 +3778,7 @@
             6,
             7
         ],
-        "persistant": [
+        "persistent": [
             false,
             true
         ],
@@ -3797,7 +3797,7 @@
             6,
             7
         ],
-        "persistant": [
+        "persistent": [
             false,
             true
         ],
@@ -8248,205 +8248,6 @@
             "z"
         ]
     },
-    "minecraft:minecraft:dark_oak_leaves": {
-        "distance": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "persistent": [
-            false,
-            true
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
-    "minecraft:minecraft:acacia_leaves": {
-        "distance": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "persistent": [
-            false,
-            true
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
-    "minecraft:minecraft:mangrove_leaves": {
-        "distance": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "persistent": [
-            false,
-            true
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
-    "minecraft:minecraft:spruce_leaves": {
-        "distance": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "persistent": [
-            false,
-            true
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
-    "minecraft:minecraft:azalea_leaves": {
-        "distance": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "persistent": [
-            false,
-            true
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
-    "minecraft:minecraft:flowering_azalea_leaves": {
-        "distance": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "persistent": [
-            false,
-            true
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
-    "minecraft:minecraft:jungle_leaves": {
-        "distance": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "persistent": [
-            false,
-            true
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
-    "minecraft:minecraft:oak_leaves": {
-        "distance": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "persistent": [
-            false,
-            true
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
-    "minecraft:minecraft:birch_leaves": {
-        "distance": [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7
-        ],
-        "persistent": [
-            false,
-            true
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
-    "minecraft:minecraft:mangrove_wood": {
-        "axis": [
-            "x",
-            "y",
-            "z"
-        ]
-    },
-    "minecraft:minecraft:stripped_mangrove_wood": {
-        "axis": [
-            "x",
-            "y",
-            "z"
-        ]
-    },
-    "minecraft:minecraft:stripped_mangrove_log": {
-        "axis": [
-            "x",
-            "y",
-            "z"
-        ]
-    },
-    "minecraft:minecraft:mangrove_log": {
-        "axis": [
-            "x",
-            "y",
-            "z"
-        ]
-    },
     "minecraft:mangrove_slab": {
         "type": [
             "bottom",
@@ -8648,26 +8449,6 @@
             true
         ]
     },
-    "minecraft:mangrove_progagule": {
-        "age": [
-            0,
-            1,
-            2,
-            3
-        ],
-        "hanging": [
-            false,
-            true
-        ],
-        "stage": [
-            0,
-            1
-        ],
-        "waterlogged": [
-            false,
-            true
-        ]
-    },
     "minecraft:mangrove_roots": {
         "waterlogged": [
             false,
@@ -8787,6 +8568,73 @@
             true
         ],
         "down": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_leaves": {
+        "distance": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+        ],
+        "persistent": [
+            false,
+            true
+        ],
+        "waterlogged": [
+            false,
+            true
+        ]
+    },
+    "minecraft:mangrove_log": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:mangrove_wood": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:stripped_mangrove_wood": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:stripped_mangrove_log": {
+        "axis": [
+            "x",
+            "y",
+            "z"
+        ]
+    },
+    "minecraft:mangrove_propagule": {
+        "age": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "hanging": [
+            false,
+            true
+        ],
+        "stage": [
+            0,
+            1
+        ],
+        "waterlogged": [
             false,
             true
         ]
