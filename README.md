@@ -46,7 +46,7 @@ kill @e[type=item,y=500,distance=..1,limit=1]
 ```mcfunction
 #> foo:bar_
 # (50,50,50)のブロックの"minecraft:"を省略したIDを取得
-execute positioned 50 50 50 run function foo:get
+execute positioned 50 50 50 run function foo:get_
 
 
 #> foo:get_
