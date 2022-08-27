@@ -6,7 +6,7 @@ from copy import deepcopy
 from itertools import product
 
 
-PATH = Path(os.path.dirname(os.path.abspath(__file__)))
+PATH = Path(os.path.dirname(__file__))
 
 
 # load files
