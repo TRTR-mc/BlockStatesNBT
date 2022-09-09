@@ -22,13 +22,13 @@ ID_TPL = TEMPLATE["pools"][0]["entries"][0]
 STATE_TPL = TEMPLATE["pools"][0]["entries"][1]
 
 
-# replace $,@,=
+# replace
 def gen_dict(mc_id: str, set_nbt=None):
     mc_id_ = mc_id.replace('minecraft:', '')
     if set_nbt is None:
-        out_s = (str(ID_TPL)).replace('$', mc_id).replace('@', mc_id_)
+        out_s = (str(ID_TPL)).replace('%ID%', mc_id).replace('%ID_%', mc_id_)
     else:
-        out_s = (str(STATE_TPL)).replace('$', mc_id).replace('@', mc_id_).replace('=', set_nbt)
+        out_s = (str(STATE_TPL)).replace('%ID%', mc_id).replace('%ID_%', mc_id_).replace('%STATE%', set_nbt)
 
     return literal_eval(out_s)
 
@@ -61,15 +61,14 @@ for id in (list(blockstates_dict.keys())):
     for com in state_list_p:
         state_ = [temp for temp in com if temp != "_"]
         state = dict(state_)
-
-        # generate string for set_nbt
+        # set_nbt
         d_str_l = []
         for k, v in state.items():
             if type(v) is str:
                 d_str_l.append(str(k) + ":" + "\"" + str(v) + "\"")
             elif type(v) is int:
                 d_str_l.append(str(k) + ":" + str(v))
-            else:   # bool
+            else:
                 d_str_l.append(str(k) + ":" + str.lower(str(v)))
 
         set_nbt_tag = "{" + ",".join(d_str_l) + "}"
@@ -80,7 +79,7 @@ for id in (list(blockstates_dict.keys())):
         state_dic_list.append(deepcopy(value))
 
 
-# loot_tables for export
+# loot_tables
 out_id = deepcopy(TEMPLATE)
 out_id["pools"][0]["entries"] = id_dic_list
 

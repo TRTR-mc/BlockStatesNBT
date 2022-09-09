@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{data:{id:\"$\", id_:\"@\"}}"
+                            "tag": "{data:{id:\"%ID%\", id_:\"%ID_%\"}}"
                         }
                     ],
                     "conditions": [
@@ -18,7 +18,7 @@
                             "predicate": {
                                 "block": {
                                     "blocks": [
-                                        "$"
+                                        "%ID%"
                                     ]
                                 }
                             }
@@ -31,7 +31,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{data:{id:\"$\", id_:\"@\", state:=}}"
+                            "tag": "{data:{id:\"%ID%\", id_:\"%ID_%\", state:%STATE%}}"
                         }
                     ],
                     "conditions": [
@@ -40,7 +40,7 @@
                             "predicate": {
                                 "block": {
                                     "blocks": [
-                                        "$"
+                                        "%ID%"
                                     ],
                                     "state": ""
                                 }
