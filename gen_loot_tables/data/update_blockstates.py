@@ -13,7 +13,7 @@ XYZ = ["x", "y", "z"]
 
 # update
 def update_dict(keys: list, values: list, id: set):
-    id_l = [_ if _.startswith('minecraft:') else 'minecraft:' + _ for _ in id] 
+    id_l = [_ if _.startswith('minecraft:') else 'minecraft:' + _ for _ in id]
     s_dict = dict(zip(keys, values))
     dic = {k: s_dict for k in id_l}
     blockstates.update(dic)

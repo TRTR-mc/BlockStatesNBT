@@ -1,54 +1,55 @@
 {
-    "pools": [
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:debug_stick",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{data:{id:\"%ID%\", id_:\"%ID_%\"}}"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:location_check",
-                            "predicate": {
-                                "block": {
-                                    "blocks": [
-                                        "%ID%"
-                                    ]
-                                }
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:debug_stick",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{data:{id:\"%ID%\", id_:\"%ID_%\", state:%STATE%}}"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:location_check",
-                            "predicate": {
-                                "block": {
-                                    "blocks": [
-                                        "%ID%"
-                                    ],
-                                    "state": ""
-                                }
-                            }
-                        }
-                    ]
+    "POOLS": {
+        "pools": [
+            {
+                "rolls": 1,
+                "entries": []
+            }
+        ]
+    },
+    "ID": {
+        "type": "minecraft:item",
+        "name": "minecraft:debug_stick",
+        "functions": [
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{data:{id:\"%id%\", id_:\"%id_%\"}}"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                    "block": {
+                        "blocks": [
+                            "%id%"
+                        ]
+                    }
                 }
-            ]
-        }
-    ]
+            }
+        ]
+    },
+    "STATE": {
+        "type": "minecraft:item",
+        "name": "minecraft:debug_stick",
+        "functions": [
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{data:{id:\"%id%\", id_:\"%id_%\", state:%state%}}"
+            }
+        ],
+        "conditions": [
+            {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                    "block": {
+                        "blocks": [
+                            "%id%"
+                        ],
+                        "state": ""
+                    }
+                }
+            }
+        ]
+    }
 }
